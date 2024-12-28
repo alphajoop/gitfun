@@ -20,7 +20,7 @@ export function EmojiCard({ emoji }: EmojiCardProps) {
   const copyEmoji = () => {
     navigator.clipboard.writeText(emoji.icon);
     toast({
-      description: 'Emoji copied to clipboard',
+      description: `✅ Copied "${emoji.name}"!`,
     });
   };
 

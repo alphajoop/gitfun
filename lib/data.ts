@@ -20,6 +20,18 @@ export const emojiCategories = [
         usage: 'Improve code structure or style',
         example: '🎨 Refactor layout components',
       },
+      {
+        icon: '🔮',
+        name: 'Crystal Ball',
+        usage: 'Experimental features',
+        example: '🔮 Add AI-powered suggestions',
+      },
+      {
+        icon: '🌟',
+        name: 'Star',
+        usage: 'Highlight major improvements',
+        example: '🌟 Revamp homepage UI',
+      },
     ],
   },
   {
@@ -32,12 +44,6 @@ export const emojiCategories = [
         example: '🐛 Fix login validation',
       },
       {
-        icon: '🔒',
-        name: 'Lock',
-        usage: 'Security fixes',
-        example: '🔒 Update dependencies',
-      },
-      {
         icon: '🚑',
         name: 'Ambulance',
         usage: 'Critical hotfix',
@@ -45,9 +51,27 @@ export const emojiCategories = [
       },
       {
         icon: '🩹',
-        name: 'Adhesive Bandage',
+        name: 'Bandage',
         usage: 'Minor fixes',
         example: '🩹 Adjust padding on navbar',
+      },
+      {
+        icon: '🔒',
+        name: 'Lock',
+        usage: 'Security fixes',
+        example: '🔒 Update dependencies',
+      },
+      {
+        icon: '⚡',
+        name: 'Lightning Bolt',
+        usage: 'Quick performance fix',
+        example: '⚡ Optimize database indexing',
+      },
+      {
+        icon: '🔥',
+        name: 'Fire',
+        usage: 'Critical fixes or urgent issues',
+        example: '🔥 Fix production crash',
       },
     ],
   },
@@ -66,6 +90,18 @@ export const emojiCategories = [
         usage: 'Add or update examples',
         example: '📖 Add usage example for hooks',
       },
+      {
+        icon: '📚',
+        name: 'Books',
+        usage: 'Comprehensive documentation updates',
+        example: '📚 Revise developer guide',
+      },
+      {
+        icon: '🔍',
+        name: 'Magnifying Glass',
+        usage: 'Improve search or examples',
+        example: '🔍 Add detailed search guide',
+      },
     ],
   },
   {
@@ -80,8 +116,14 @@ export const emojiCategories = [
       {
         icon: '🧪',
         name: 'Test Tube',
-        usage: 'Add or update experiments or prototypes',
+        usage: 'Add or update experiments',
         example: '🧪 Test experimental feature flag',
+      },
+      {
+        icon: '📊',
+        name: 'Bar Chart',
+        usage: 'Performance or test reports',
+        example: '📊 Add performance metrics',
       },
     ],
   },
@@ -99,6 +141,18 @@ export const emojiCategories = [
         name: 'Pencil',
         usage: 'Fix typos or minor text updates',
         example: '✏️ Fix typo in error message',
+      },
+      {
+        icon: '📢',
+        name: 'Loudspeaker',
+        usage: 'Announce content updates',
+        example: '📢 Add new blog post',
+      },
+      {
+        icon: '🖋️',
+        name: 'Fountain Pen',
+        usage: 'Editorial adjustments',
+        example: '🖋️ Revise marketing copy',
       },
     ],
   },
@@ -123,6 +177,12 @@ export const emojiCategories = [
         usage: 'Update package files',
         example: '📦 Update package.json',
       },
+      {
+        icon: '🔄',
+        name: 'Arrows Circle',
+        usage: 'Periodic updates',
+        example: '🔄 Weekly library updates',
+      },
     ],
   },
   {
@@ -146,6 +206,12 @@ export const emojiCategories = [
         usage: 'Fix CI/CD issues',
         example: '💚 Fix failing tests in CI',
       },
+      {
+        icon: '🚧',
+        name: 'Construction Barrier',
+        usage: 'Temporary restrictions or fixes',
+        example: '🚧 Block certain IPs temporarily',
+      },
     ],
   },
   {
@@ -153,7 +219,7 @@ export const emojiCategories = [
     emojis: [
       {
         icon: '🔀',
-        name: 'Twisted Rightwards Arrows',
+        name: 'Twisted Arrows',
         usage: 'Merge branches',
         example: '🔀 Merge feature/login into main',
       },
@@ -165,14 +231,14 @@ export const emojiCategories = [
       },
       {
         icon: '🌐',
-        name: 'Globe with Meridians',
-        usage: 'Update localization files',
+        name: 'Globe',
+        usage: 'Localization updates',
         example: '🌐 Add French translations',
       },
       {
         icon: '🗑️',
         name: 'Wastebasket',
-        usage: 'Deprecate or remove unused functionality',
+        usage: 'Deprecate or remove functionality',
         example: '🗑️ Remove deprecated API endpoints',
       },
     ],
@@ -188,9 +254,15 @@ export const emojiCategories = [
       },
       {
         icon: '📄',
-        name: 'Page Facing Up',
+        name: 'Page',
         usage: 'Add or update files',
         example: '📄 Add terms and conditions document',
+      },
+      {
+        icon: '🗃️',
+        name: 'Archive',
+        usage: 'Archive files',
+        example: '🗃️ Archive old release notes',
       },
     ],
   },
@@ -208,6 +280,12 @@ export const emojiCategories = [
         name: 'Label',
         usage: 'Release or version tags',
         example: '🏷️ Release v1.0.0',
+      },
+      {
+        icon: '🚩',
+        name: 'Flag',
+        usage: 'Major milestones',
+        example: '🚩 Add v2.0 features',
       },
     ],
   },
