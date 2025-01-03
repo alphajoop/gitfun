@@ -32,6 +32,12 @@ export const emojiCategories = [
         usage: 'Highlight major improvements',
         example: '🌟 Revamp homepage UI',
       },
+      {
+        icon: '📱',
+        name: 'Mobile Phone',
+        usage: 'Enhance mobile responsiveness',
+        example: '📱 Make homepage responsive',
+      },
     ],
   },
   {
@@ -73,6 +79,12 @@ export const emojiCategories = [
         usage: 'Critical fixes or urgent issues',
         example: '🔥 Fix production crash',
       },
+      {
+        icon: '♻️',
+        name: 'Recycling Symbol',
+        usage: 'Refactor code without changing behavior',
+        example: '♻️ Refactor user input validation',
+      },
     ],
   },
   {
@@ -102,6 +114,12 @@ export const emojiCategories = [
         usage: 'Improve search or examples',
         example: '🔍 Add detailed search guide',
       },
+      {
+        icon: '🖼️',
+        name: 'Framed Picture',
+        usage: 'Add or update diagrams/screenshots',
+        example: '🖼️ Add architecture diagram to README',
+      },
     ],
   },
   {
@@ -124,6 +142,12 @@ export const emojiCategories = [
         name: 'Bar Chart',
         usage: 'Performance or test reports',
         example: '📊 Add performance metrics',
+      },
+      {
+        icon: '🔬',
+        name: 'Microscope',
+        usage: 'Conduct detailed tests or debugging',
+        example: '🔬 Investigate flaky tests in CI',
       },
     ],
   },
@@ -154,6 +178,12 @@ export const emojiCategories = [
         usage: 'Editorial adjustments',
         example: '🖋️ Revise marketing copy',
       },
+      {
+        icon: '🖍️',
+        name: 'Crayon',
+        usage: 'Make visual design changes',
+        example: '🖍️ Update color scheme for dark mode',
+      },
     ],
   },
   {
@@ -182,6 +212,12 @@ export const emojiCategories = [
         name: 'Arrows Circle',
         usage: 'Periodic updates',
         example: '🔄 Weekly library updates',
+      },
+      {
+        icon: '🛡️',
+        name: 'Shield',
+        usage: 'Add or update security dependencies',
+        example: '🛡️ Install helmet for enhanced security',
       },
     ],
   },
@@ -240,6 +276,12 @@ export const emojiCategories = [
         name: 'Wastebasket',
         usage: 'Deprecate or remove functionality',
         example: '🗑️ Remove deprecated API endpoints',
+      },
+      {
+        icon: '🎯',
+        name: 'Dart',
+        usage: 'Focus on specific improvements or goals',
+        example: '🎯 Improve accessibility for forms',
       },
     ],
   },
