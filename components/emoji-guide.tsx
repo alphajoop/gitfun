@@ -21,8 +21,10 @@ export function EmojiGuide() {
   return (
     <section className="space-y-6 py-8">
       <div className="space-y-2">
-        <h1 className="text-3xl font-bold">Commit Message Emoji Guide</h1>
-        <p className="text-zinc-800">
+        <h1 className="text-prDark text-3xl font-bold dark:text-prLight">
+          Commit Message Emoji Guide
+        </h1>
+        <p className="text-prGrey dark:text-prGrey">
           Choose the perfect emoji for your commits
         </p>
       </div>
