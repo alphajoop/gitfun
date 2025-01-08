@@ -1,3 +1,4 @@
+import { ThemeProvider } from 'next-themes';
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
@@ -20,11 +21,11 @@ export const metadata: Metadata = {
   description:
     'GitFun simplifies your commit messages with emoji guides and best practices for Git.',
   keywords: [
-    'Git',
+    'git',
     'commit messages',
     'emoji guide',
-    'Git best practices',
-    'Git tools',
+    'git best practices',
+    'git tools',
   ],
   authors: [{ name: 'Alpha Diop', url: '' }],
   openGraph: {
@@ -58,15 +59,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} mx-auto max-w-5xl bg-white px-4 font-geist_sans text-zinc-950 antialiased`}
+    <>
+      <html
+        lang="en"
+        className={`${geistSans.variable} ${geistMono.variable} dark:bg-bgBlack font-geist_sans text-prDark mx-auto max-w-5xl bg-bgWhite px-4 antialiased dark:text-prLight`}
       >
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        <Toaster />
-      </body>
-    </html>
+        <body>
+          <ThemeProvider attribute="class">
+            <Header />
+            <main>{children}</main>
+            <Footer />
+            <Toaster />
+          </ThemeProvider>
+        </body>
+      </html>
+    </>
   );
 }
