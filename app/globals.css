@@ -3,15 +3,22 @@
 @tailwind utilities;
 
 :root {
-  --sh-class: #2d5e9d;
-  --sh-identifier: #354150;
-  --sh-sign: #8996a3;
-  --sh-property: #0550ae;
-  --sh-entity: #249a97;
-  --sh-jsxliterals: #6266d1;
-  --sh-string: #00a99a;
-  --sh-keyword: #f47067;
-  --sh-comment: #a19595;
+  --color-white: #ffffff;
+  --color-dark: #09090b;
+  --color-grey: #f4f4f5;
+}
+
+html {
+  background-color: var(--color-white);
+  color: var(--color-dark);
+}
+
+html.dark {
+  background-color: var(--color-dark);
+  color: var(--color-grey);
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
 
 body {

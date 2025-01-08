@@ -1,7 +1,7 @@
 import type { Config } from 'tailwindcss';
 
 export default {
-  darkMode: ['class'],
+  darkMode: 'class',
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -14,8 +14,13 @@ export default {
     },
     extend: {
       colors: {
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
+        // background color
+        bgWhite: '#ffffff',
+        bgBlack: '#09090b',
+        // primitive color
+        prGrey: '#828291',
+        prLight: '#f4f4f5',
+        prDark: '#1c1c1f',
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -24,6 +29,5 @@ export default {
       },
     },
   },
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
   plugins: [require('tailwindcss-animate')],
 } satisfies Config;
