@@ -60,12 +60,16 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <html
-        lang="en"
-        className={`${geistSans.variable} ${geistMono.variable} dark:bg-bgBlack font-geist_sans text-prDark mx-auto max-w-5xl bg-bgWhite px-4 antialiased dark:text-prLight`}
-      >
-        <body>
-          <ThemeProvider attribute="class">
+      <html lang="en">
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} dark:bg-bgBlack font-geist_sans text-prDark mx-auto max-w-5xl bg-bgWhite px-4 antialiased dark:text-prLight`}
+        >
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="light"
+            enableSystem={true}
+            disableTransitionOnChange
+          >
             <Header />
             <main>{children}</main>
             <Footer />
