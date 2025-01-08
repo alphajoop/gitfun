@@ -1,20 +1,12 @@
 import { ThemeProvider } from 'next-themes';
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { GeistSans } from 'geist/font/sans';
+import { GeistMono } from 'geist/font/mono';
+
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
-
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
 
 export const metadata: Metadata = {
   title: 'GitFun - Make Commits Easy and Fun',
@@ -62,7 +54,7 @@ export default function RootLayout({
     <>
       <html lang="en">
         <body
-          className={`${geistSans.variable} ${geistMono.variable} dark:bg-bgBlack font-geist_sans text-prDark mx-auto max-w-5xl bg-bgWhite px-4 antialiased dark:text-prLight`}
+          className={`${GeistSans.variable} ${GeistMono.variable} dark:bg-bgBlack font-geist_sans text-prDark mx-auto max-w-5xl bg-bgWhite px-4 antialiased dark:text-prLight`}
         >
           <ThemeProvider
             attribute="class"
