@@ -4,7 +4,7 @@ import { ThemeToggle } from '@/components/theme-toggle';
 
 export function Header() {
   return (
-    <header className="bg-background/95 supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 w-full border-b backdrop-blur">
+    <header className="bg-background/95 supports-[backdrop-filter]:bg-background/60 dark:border-prDark sticky top-0 z-50 w-full border-b border-prLight backdrop-blur">
       <div className="container flex h-14 items-center gap-4">
         <div className="flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
@@ -15,13 +15,13 @@ export function Header() {
           <nav className="flex items-center space-x-6">
             <Link
               href="/docs"
-              className="hover:text-foreground/80 text-sm font-medium transition-colors"
+              className="text-sm font-medium transition-colors hover:text-prGrey"
             >
               Docs
             </Link>
             <Link
               href="/examples"
-              className="hover:text-foreground/80 text-sm font-medium transition-colors"
+              className="text-sm font-medium transition-colors hover:text-prGrey"
             >
               Examples
             </Link>

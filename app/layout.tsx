@@ -1,30 +1,23 @@
+import { ThemeProvider } from 'next-themes';
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { GeistSans } from 'geist/font/sans';
+import { GeistMono } from 'geist/font/mono';
+
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
-
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
 
 export const metadata: Metadata = {
   title: 'GitFun - Make Commits Easy and Fun',
   description:
     'GitFun simplifies your commit messages with emoji guides and best practices for Git.',
   keywords: [
-    'Git',
+    'git',
     'commit messages',
     'emoji guide',
-    'Git best practices',
-    'Git tools',
+    'git best practices',
+    'git tools',
   ],
   authors: [{ name: 'Alpha Diop', url: '' }],
   openGraph: {
@@ -58,15 +51,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} mx-auto max-w-5xl bg-white px-4 font-geist_sans text-zinc-950 antialiased`}
-      >
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        <Toaster />
-      </body>
-    </html>
+    <>
+      <html lang="en">
+        <body
+          className={`${GeistSans.variable} ${GeistMono.variable} dark:bg-bgBlack font-geist_sans text-prDark mx-auto max-w-5xl bg-bgWhite px-4 antialiased dark:text-prLight`}
+        >
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="light"
+            enableSystem={true}
+            disableTransitionOnChange
+          >
+            <Header />
+            <main>{children}</main>
+            <Footer />
+            <Toaster />
+          </ThemeProvider>
+        </body>
+      </html>
+    </>
   );
 }
