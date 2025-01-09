@@ -15,7 +15,7 @@ const Command = React.forwardRef<
   <CommandPrimitive
     ref={ref}
     className={cn(
-      'dark:bg-bgBlack text-prDark flex h-full w-full flex-col overflow-hidden rounded-md bg-bgWhite dark:text-prLight',
+      'flex h-full w-full flex-col overflow-hidden rounded-md bg-bgWhite text-prDark dark:bg-bgBlack dark:text-prLight',
       className,
     )}
     {...props}
@@ -87,7 +87,7 @@ const CommandGroup = React.forwardRef<
   <CommandPrimitive.Group
     ref={ref}
     className={cn(
-      'text-prDark overflow-hidden p-1 dark:text-prLight [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-xs [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-prGrey dark:[&_[cmdk-group-heading]]:text-prGrey',
+      'overflow-hidden p-1 text-prDark dark:text-prLight [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-xs [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-prGrey dark:[&_[cmdk-group-heading]]:text-prGrey',
       className,
     )}
     {...props}
@@ -102,7 +102,7 @@ const CommandSeparator = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <CommandPrimitive.Separator
     ref={ref}
-    className={cn('dark:bg-bgBlack -mx-1 h-px bg-bgWhite', className)}
+    className={cn('-mx-1 h-px bg-bgWhite dark:bg-bgBlack', className)}
     {...props}
   />
 ));
@@ -115,7 +115,7 @@ const CommandItem = React.forwardRef<
   <CommandPrimitive.Item
     ref={ref}
     className={cn(
-      "dark:data-[selected='true']:bg-bgBlack data-[selected=true]:text-prDark relative flex cursor-default select-none items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-none data-[disabled=true]:pointer-events-none data-[selected='true']:bg-bgWhite data-[disabled=true]:opacity-50 dark:data-[selected=true]:text-prLight [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+      "relative flex cursor-default select-none items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-none data-[disabled=true]:pointer-events-none data-[selected='true']:bg-bgWhite data-[selected=true]:text-prDark data-[disabled=true]:opacity-50 dark:data-[selected='true']:bg-bgBlack dark:data-[selected=true]:text-prLight [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
       className,
     )}
     {...props}
