@@ -21,7 +21,7 @@ export function EmojiGuide() {
   return (
     <section className="space-y-6 py-8">
       <div className="space-y-2">
-        <h1 className="text-prDark text-3xl font-bold dark:text-prLight">
+        <h1 className="text-3xl font-bold text-prDark dark:text-prLight">
           Commit Message Emoji Guide
         </h1>
         <p className="text-prGrey dark:text-prGrey">
