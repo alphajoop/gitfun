@@ -331,4 +331,39 @@ export const emojiCategories = [
       },
     ],
   },
+  {
+    name: 'Accessibility',
+    emojis: [
+      {
+        icon: '♿',
+        name: 'Wheelchair Symbol',
+        usage: 'Improve accessibility for users with disabilities',
+        example: '♿ Add ARIA labels to buttons',
+      },
+      {
+        icon: '👁️',
+        name: 'Eye',
+        usage: 'Improve visual accessibility',
+        example: '👁️ Increase contrast for better readability',
+      },
+      {
+        icon: '🔊',
+        name: 'Speaker',
+        usage: 'Improve audio accessibility',
+        example: '🔊 Add captions to video content',
+      },
+      {
+        icon: '🖐️',
+        name: 'Hand',
+        usage: 'Improve touch or interaction accessibility',
+        example: '🖐️ Make buttons larger for touch devices',
+      },
+      {
+        icon: '🧠',
+        name: 'Brain',
+        usage: 'Improve cognitive accessibility',
+        example: '🧠 Simplify navigation for better usability',
+      },
+    ],
+  },
 ];
