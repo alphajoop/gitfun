@@ -17,7 +17,9 @@ interface EmojiCardProps {
 export function EmojiCard({ emoji }: EmojiCardProps) {
   const copyEmoji = () => {
     navigator.clipboard.writeText(emoji.icon);
-    toast.success(`Copied "${emoji.name}"!`);
+    toast.success(`Copied "${emoji.name}"!`, {
+      duration: 5000,
+    });
   };
 
   return (
@@ -38,7 +40,7 @@ export function EmojiCard({ emoji }: EmojiCardProps) {
         <CardDescription>{emoji.usage}</CardDescription>
       </CardHeader>
       <CardContent>
-        <pre className="bg-prLight dark:bg-prDark block w-full overflow-x-auto rounded-md p-2 font-mono text-sm">
+        <pre className="bg-muted block w-full overflow-x-auto rounded-md p-2 font-mono text-sm">
           <code
             dangerouslySetInnerHTML={{ __html: highlight(emoji.example) }}
           />
