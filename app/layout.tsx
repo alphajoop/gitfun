@@ -47,28 +47,26 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <>
-      <html lang="en">
-        <body
-          className={`${GeistSans.variable} ${GeistMono.variable} bg-bgWhite text-prDark dark:bg-bgBlack dark:text-prLight mx-auto max-w-5xl px-4 font-sans antialiased`}
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={`${GeistSans.variable} ${GeistMono.variable} bg-background text-foreground mx-auto w-full px-4 font-sans antialiased`}
+      >
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
         >
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="light"
-            enableSystem={true}
-            disableTransitionOnChange
-          >
-            <Header />
-            <main>{children}</main>
-            <Footer />
-            <Toaster richColors />
-          </ThemeProvider>
-        </body>
-      </html>
-    </>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+          <Toaster richColors />
+        </ThemeProvider>
+      </body>
+    </html>
   );
 }

@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import { Github } from 'lucide-react';
-import { ThemeToggle } from '@/components/theme-toggle';
+import { ModeToggle } from '@/components/ui/mode-toggle';
 
 export function Header() {
   return (
-    <header className="bg-background/95 supports-[backdrop-filter]:bg-background/60 border-prLight dark:border-prDark sticky top-0 z-50 w-full border-b backdrop-blur">
-      <div className="container flex h-14 items-center gap-4">
+    <header className="bg-background/95 supports-[backdrop-filter]:bg-background/60 sticky top-0 z-10 mx-auto w-full max-w-5xl border-b backdrop-blur">
+      <div className="container flex h-14 items-center justify-between">
         <div className="flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <span className="font-bold whitespace-nowrap">Git Fun</span>
@@ -15,13 +15,13 @@ export function Header() {
           <nav className="flex items-center space-x-6">
             <Link
               href="/docs"
-              className="hover:text-prGrey text-sm font-medium transition-colors"
+              className="hover:text-muted-foreground text-sm font-medium transition-colors"
             >
               Docs
             </Link>
             <Link
               href="/examples"
-              className="hover:text-prGrey text-sm font-medium transition-colors"
+              className="hover:text-muted-foreground text-sm font-medium transition-colors"
             >
               Examples
             </Link>
@@ -34,7 +34,7 @@ export function Header() {
             >
               <Github className="h-5 w-5" />
             </Link>
-            <ThemeToggle />
+            <ModeToggle />
           </div>
         </div>
       </div>

@@ -19,12 +19,12 @@ export function EmojiGuide() {
     .filter((category) => category.emojis.length > 0);
 
   return (
-    <section className="space-y-6 py-8">
+    <section className="mx-auto max-w-5xl space-y-6 py-8">
       <div className="space-y-2">
-        <h1 className="text-prDark dark:text-prLight text-3xl font-bold">
+        <h1 className="text-foreground text-3xl font-bold">
           Commit Message Emoji Guide
         </h1>
-        <p className="text-prGrey dark:text-prGrey">
+        <p className="text-muted-foreground">
           Choose the perfect emoji for your commits
         </p>
       </div>
