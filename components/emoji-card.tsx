@@ -7,7 +7,7 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Emoji } from '@/types/types';
-import { useToast } from '@/hooks/use-toast';
+import { toast } from 'sonner';
 import { highlight } from 'sugar-high';
 
 interface EmojiCardProps {
@@ -15,13 +15,9 @@ interface EmojiCardProps {
 }
 
 export function EmojiCard({ emoji }: EmojiCardProps) {
-  const { toast } = useToast();
-
   const copyEmoji = () => {
     navigator.clipboard.writeText(emoji.icon);
-    toast({
-      description: `✅ Copied "${emoji.name}"!`,
-    });
+    toast.success(`Copied "${emoji.name}"!`);
   };
 
   return (
