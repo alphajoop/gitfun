@@ -4,7 +4,7 @@ import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 
 import './globals.css';
-import { Toaster } from '@/components/ui/toaster';
+import { Toaster } from '@/components/ui/sonner';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 
@@ -65,7 +65,7 @@ export default function RootLayout({
             <Header />
             <main>{children}</main>
             <Footer />
-            <Toaster />
+            <Toaster richColors />
           </ThemeProvider>
         </body>
       </html>
