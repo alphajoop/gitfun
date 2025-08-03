@@ -5,13 +5,11 @@ We're excited that you're interested in contributing to GitFun! This is an open-
 ## How to Contribute 🔧
 
 1. **Fork & Clone**
-
    - Fork the repository
    - Clone your fork
    - Add the original repo as upstream
 
 2. **Make Changes**
-
    - Create a new branch
    - Make your changes
    - Use emojis in your commit messages!
