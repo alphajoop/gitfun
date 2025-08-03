@@ -16,7 +16,7 @@ const ToastViewport = React.forwardRef<
   <ToastPrimitives.Viewport
     ref={ref}
     className={cn(
-      'fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]',
+      'fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:top-auto sm:right-0 sm:bottom-0 sm:flex-col md:max-w-[420px]',
       className,
     )}
     {...props}
@@ -63,7 +63,7 @@ const ToastAction = React.forwardRef<
   <ToastPrimitives.Action
     ref={ref}
     className={cn(
-      'inline-flex h-8 shrink-0 items-center justify-center rounded-md border border-prLight bg-transparent px-3 text-sm font-medium ring-offset-prLight transition-colors hover:bg-prGrey focus:outline-none focus:ring-2 focus:ring-prDark focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 group-[.destructive]:border-prGrey group-[.destructive]:hover:border-red-500/30 group-[.destructive]:hover:bg-red-500 group-[.destructive]:hover:text-prLight group-[.destructive]:focus:ring-red-500 dark:border-prDark dark:ring-offset-prDark dark:hover:bg-prGrey dark:focus:ring-prLight dark:group-[.destructive]:border-prDark dark:group-[.destructive]:hover:border-red-900/30 dark:group-[.destructive]:hover:bg-red-900 dark:group-[.destructive]:hover:text-prLight dark:group-[.destructive]:focus:ring-red-900',
+      'border-prLight ring-offset-prLight hover:bg-prGrey focus:ring-prDark group-[.destructive]:border-prGrey group-[.destructive]:hover:text-prLight dark:border-prDark dark:ring-offset-prDark dark:hover:bg-prGrey dark:focus:ring-prLight dark:group-[.destructive]:border-prDark dark:group-[.destructive]:hover:text-prLight inline-flex h-8 shrink-0 items-center justify-center rounded-md border bg-transparent px-3 text-sm font-medium transition-colors group-[.destructive]:hover:border-red-500/30 group-[.destructive]:hover:bg-red-500 focus:ring-2 focus:ring-offset-2 focus:outline-none group-[.destructive]:focus:ring-red-500 disabled:pointer-events-none disabled:opacity-50 dark:group-[.destructive]:hover:border-red-900/30 dark:group-[.destructive]:hover:bg-red-900 dark:group-[.destructive]:focus:ring-red-900',
       className,
     )}
     {...props}
@@ -78,7 +78,7 @@ const ToastClose = React.forwardRef<
   <ToastPrimitives.Close
     ref={ref}
     className={cn(
-      'absolute right-2 top-2 rounded-md p-1 text-prDark opacity-0 transition-opacity hover:text-prGrey focus:opacity-100 focus:outline-none focus:ring-2 group-hover:opacity-100 group-[.destructive]:text-red-300 group-[.destructive]:hover:text-red-50 group-[.destructive]:focus:ring-red-400 group-[.destructive]:focus:ring-offset-red-600 dark:text-prLight dark:hover:text-prGrey',
+      'text-prDark hover:text-prGrey dark:text-prLight dark:hover:text-prGrey absolute top-2 right-2 rounded-md p-1 opacity-0 transition-opacity group-hover:opacity-100 group-[.destructive]:text-red-300 group-[.destructive]:hover:text-red-50 focus:opacity-100 focus:ring-2 focus:outline-none group-[.destructive]:focus:ring-red-400 group-[.destructive]:focus:ring-offset-red-600',
       className,
     )}
     toast-close=""

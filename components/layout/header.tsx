@@ -4,24 +4,24 @@ import { ThemeToggle } from '@/components/theme-toggle';
 
 export function Header() {
   return (
-    <header className="bg-background/95 supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 w-full border-b border-prLight backdrop-blur dark:border-prDark">
+    <header className="bg-background/95 supports-[backdrop-filter]:bg-background/60 border-prLight dark:border-prDark sticky top-0 z-50 w-full border-b backdrop-blur">
       <div className="container flex h-14 items-center gap-4">
         <div className="flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <span className="whitespace-nowrap font-bold">Git Fun</span>
+            <span className="font-bold whitespace-nowrap">Git Fun</span>
           </Link>
         </div>
         <div className="flex flex-1 items-center justify-between gap-4 space-x-2">
           <nav className="flex items-center space-x-6">
             <Link
               href="/docs"
-              className="text-sm font-medium transition-colors hover:text-prGrey"
+              className="hover:text-prGrey text-sm font-medium transition-colors"
             >
               Docs
             </Link>
             <Link
               href="/examples"
-              className="text-sm font-medium transition-colors hover:text-prGrey"
+              className="hover:text-prGrey text-sm font-medium transition-colors"
             >
               Examples
             </Link>

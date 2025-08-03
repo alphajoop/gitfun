@@ -42,7 +42,7 @@ export function EmojiCard({ emoji }: EmojiCardProps) {
         <CardDescription>{emoji.usage}</CardDescription>
       </CardHeader>
       <CardContent>
-        <pre className="block w-full overflow-x-auto rounded-md bg-prLight p-2 font-geist_mono text-sm dark:bg-prDark">
+        <pre className="bg-prLight dark:bg-prDark block w-full overflow-x-auto rounded-md p-2 font-mono text-sm">
           <code
             dangerouslySetInnerHTML={{ __html: highlight(emoji.example) }}
           />

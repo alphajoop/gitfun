@@ -54,7 +54,7 @@ export default function RootLayout({
     <>
       <html lang="en">
         <body
-          className={`${GeistSans.variable} ${GeistMono.variable} mx-auto max-w-5xl bg-bgWhite px-4 font-geist_sans text-prDark antialiased dark:bg-bgBlack dark:text-prLight`}
+          className={`${GeistSans.variable} ${GeistMono.variable} bg-bgWhite text-prDark dark:bg-bgBlack dark:text-prLight mx-auto max-w-5xl px-4 font-sans antialiased`}
         >
           <ThemeProvider
             attribute="class"
